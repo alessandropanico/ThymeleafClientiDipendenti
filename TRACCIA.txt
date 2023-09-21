@@ -1,0 +1,11 @@
+Usando thymeleaf gestire le tabelle del database creato in MySQL:
+
+-cliente (id, nome, cognome, eta)
+-dipendente (id, nome, cognome, eta)
+
+-Effettuare C.R.U.D. (Create Read Update Delete) delle due tabelle.
+
+Creare "controllerCLIENTI" -> Lista clienti, ricerca per nome e cognome;
+Creare "controllerDIPENDENTI" -> Lista dipendenti, ricerca per nome e cognome;
+Creare "controllerELIMINA" -> Elimina cliente per ID, elimina dipendente per ID;
+Creare "controllerMODIFICA" -> Aggiunta cliente/dipendente e modifica cliente/dipendente

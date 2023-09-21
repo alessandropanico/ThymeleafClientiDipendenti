@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifica Cliente o Dipendente</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Modifica Cliente o Dipendente</h1>
+
+        <!-- Aggiungi Cliente -->
+        <h2>Aggiungi Cliente</h2>
+        <form th:action="@{/aggiungiCliente}" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cognome">Cognome:</label>
+                <input type="text" class="form-control" id="cognome" name="cognome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="eta">Età:</label>
+                <input type="number" class="form-control" id="eta" name="eta" required>
+            </div>
+
+            <!-- Aggiungi altri campi per i dati del cliente da aggiungere -->
+
+            <button type="submit" class="btn btn-primary">Aggiungi Cliente</button>
+        </form>
+
+        <!-- Modifica Cliente -->
+        <h2>Modifica Cliente</h2>
+        <form th:action="@{/modificaCliente}" method="post">
+            <div class="form-group">
+                <label for="idCliente">ID Cliente:</label>
+                <input type="text" class="form-control" id="idCliente" name="idCliente" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeClienteMod">Nome:</label>
+                <input type="text" class="form-control" id="nomeClienteMod" name="nomeClienteMod" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cognomeClienteMod">Cognome:</label>
+                <input type="text" class="form-control" id="cognomeClienteMod" name="cognomeClienteMod" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="etaClientMod">Età:</label>
+                <input type="number" class="form-control" id="etaClienteMod" name="etaClienteMod" required>
+            </div>
+
+            <!-- Aggiungi altri campi per i dati del cliente da modificare -->
+
+            <button type="submit" class="btn btn-primary">Modifica Cliente</button>
+        </form>
+
+		<hr>
+
+        <!-- Aggiungi Dipendente -->
+        <h2>Aggiungi Dipendente</h2>
+        <form th:action="@{/aggiungiDipendente}" method="post">
+            <div class="form-group">
+                <label for="nomeDipendente">Nome:</label>
+                <input type="text" class="form-control" id="nomeDipendente" name="nomeDipendente" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cognomeDipendente">Cognome:</label>
+                <input type="text" class="form-control" id="cognomeDipendente" name="cognomeDipendente" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="etaDipendente">Età:</label>
+                <input type="number" class="form-control" id="etaDipendente" name="etaDipendente" required>
+            </div>
+
+            <!-- Aggiungi altri campi per i dati del dipendente da aggiungere -->
+
+            <button type="submit" class="btn btn-primary">Aggiungi Dipendente</button>
+        </form>
+
+        <!-- Modifica Dipendente -->
+        <h2>Modifica Dipendente</h2>
+        <form th:action="@{/modificaDipendente}" method="post">
+            <div class="form-group">
+                <label for="idDipendente">ID Dipendente:</label>
+                <input type="text" class="form-control" id="idDipendente" name="idDipendente" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomeDipendenteMod">Nome:</label>
+                <input type="text" class="form-control" id="nomeDipendenteMod" name="nomeDipendenteMod" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cognomeDipendenteMod">Cognome:</label>
+                <input type="text" class="form-control" id="cognomeDipendenteMod" name="cognomeDipendenteMod" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cognomeDipendenteMod">Età:</label>
+                <input type="number" class="form-control" id="etaDipendenteMod" name="etaDipendenteMod" required>
+            </div>
+
+            <!-- Aggiungi altri campi per i dati del dipendente da modificare -->
+
+            <button type="submit" class="btn btn-primary">Modifica Dipendente</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

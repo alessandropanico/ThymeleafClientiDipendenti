@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  
+  <title>Elimina Cliente o Dipendente</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" 
+  integrity="sha512-oJm6ZarO4Uy29Z9MCG5g8KCl9kYX4tjGPGzZraKzQaCj2i6UxAckNPX4+dLtm+9zr4Vh5BqQJ+VdRt3z3QJklg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	
+  <div class="container">
+	  
+    <h1 class="mt-5">Elimina Cliente o Dipendente</h1>
+    
+    <form th:action="@{/eliminaCliente}" method="post" class="mt-5">
+      <div class="mb-3">
+        <label for="idCliente" class="form-label">Id Cliente:</label>
+        <input type="text" class="form-control" id="idCliente" name="idCliente" required>
+      </div>
+      <button type="submit" class="btn btn-danger">Elimina Cliente</button>
+    </form>
+    
+    <form th:action="@{/eliminaDipendente}" method="post" class="mt-5">
+      <div class="mb-3">
+        <label for="idDipendente" class="form-label">Id Dipendente:</label>
+        <input type="text" class="form-control" id="idDipendente" name="idDipendente" required>
+      </div>
+      <button type="submit" class="btn btn-danger">Elimina Dipendente</button>
+    </form>
+    
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
